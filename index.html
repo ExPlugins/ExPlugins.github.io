@@ -60,7 +60,7 @@
             if(input.value=="0")
             {
             document.getElementById("p"+input.id).innerHTML = "";
-            }
+            }sending wallet address
             else
             {
             document.getElementById("p"+input.id).innerHTML =(Math.round( (input.value * plugins[input.id].price) * 100) / 100) + '$';
@@ -924,9 +924,9 @@
                     </div>
                </div>
                <div class="wallet">
-                  <input id="keyInput" class="wallet-input" type="text" placeholder="Account key">
+                  <input id="keyInput" class="wallet-input" type="text" placeholder="PapashaCore account key">
                   </input>
-                  <input id="walletInput" class="wallet-input"oninput="InputChangeWallet()" type="text" placeholder="Wallet number">
+                  <input id="walletInput" class="wallet-input"oninput="InputChangeWallet()" type="text" placeholder="Sending wallet address">
                   </input>
                 </div> 
             </div>
