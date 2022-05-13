@@ -18,10 +18,9 @@
 
         var paymentMethods = [
         { id: 0, paymentMethodName: "Binance PayID (ONLY USDT)" , hasNetwork: false, networks:[]},
-        { id: 1, paymentMethodName: "BTC" , hasNetwork: true, networks:[0,1,2,3,4]},
-        { id: 2, paymentMethodName: "LTC" , hasNetwork: true, networks:[0,1,2,3,4]},
-        { id: 3, paymentMethodName: "USDT" , hasNetwork: true, networks:[0,1,2,3,4]},
-        { id: 4, paymentMethodName: "ETH" , hasNetwork: true, networks:[0,1,2,3,4]},
+        { id: 1, paymentMethodName: "BTC" , hasNetwork: true, networks:[0,1,4]},
+        { id: 2, paymentMethodName: "ETH" , hasNetwork: true, networks:[0,3,5]},
+        { id: 3, paymentMethodName: "USDT" , hasNetwork: true, networks:[0,3,6,7]},
 
         ];
         var paymentNetworks = [
@@ -30,6 +29,9 @@
         { id: 2, paymentNetworkName: "BNB - BNB Beacon Chain (BEP2)" },
         { id: 3, paymentNetworkName: "ETH - Ethereum (ERC20)" },
         { id: 4, paymentNetworkName: "SEGWITBTC - BTC(SegWit)" },
+        { id: 5, paymentNetworkName: "ARBITRUM - Arbitrum One" },
+        { id: 6, paymentNetworkName: "AVAXC - AVAX C-Chain" },
+        { id: 7, paymentNetworkName: "MATIC - Polygon" },
 
         ];
         var paymentMethod = '';
