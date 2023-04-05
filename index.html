@@ -39,6 +39,7 @@
         var paymentMethod = '';
         var paymentNetwork = '';
         var walletF =false;
+        var keyF = false;
         window.onload = function() {
         CreateListPlugins();
         CreatePaymentMethods();
@@ -158,6 +159,12 @@
             document.getElementById('walletInput').classList.add('warning');
             f=false;
             walletF = true;
+        }
+        if(document.getElementById('keyInput').value=='')
+        {
+            document.getElementById('keyInput').classList.add('warning');
+            f=false;
+            keyF = true;
         }
         /*if(f){
             document.getElementById('app-content').classList.add('inactive');
@@ -298,6 +305,11 @@
         function InputChangeWallet(){
         if(walletF){
             document.getElementById('walletInput').classList.remove('warning');
+        }
+        }
+                function InputChangeKey(){
+        if(keyF){
+            document.getElementById('keyInput').classList.remove('warning');
         }
         }
 
@@ -926,9 +938,9 @@
                     </div>
                </div>
                <div class="wallet">
-                  <input id="keyInput" class="wallet-input" type="text" placeholder="PapashaCore settings key">
+                  <input id="keyInput" class="wallet-input"oninput="InputChangeKey()" type="text" placeholder="PapashaCore settings key">
                   </input>
-                  <input id="walletInput" class="wallet-input"oninput="InputChangeWallet()" type="text" placeholder="Sender wallet address">
+                  <input id="walletInput" class="wallet-input"oninput="InputChangeWallet()" type="text" placeholder="Your wallet address/BinancePay ID.">
                   </input>
                 </div> 
             </div>
