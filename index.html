@@ -160,7 +160,7 @@
             f=false;
             walletF = true;
         }
-        if(document.getElementById('keyInput').value=='')
+        if(document.getElementById('keyInput').value=='' || !document.getElementById('keyInput').value.includes('-'))
         {
             document.getElementById('keyInput').classList.add('warning');
             f=false;
